@@ -38,7 +38,9 @@
     <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" name="Default" comment="" />
+    <list default="true" id="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+    </list>
     <ignored path="MyScheduler.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/MainActivity.java" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1382351228785" ignored="false" />
