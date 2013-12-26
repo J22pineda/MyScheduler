@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MyScheduler.iml" filepath="$PROJECT_DIR$/MyScheduler.iml" />
+      <module fileurl="file://$USER_HOME$/MySchedulerLibs/Crouton-master/library/croutonLibrary.iml" filepath="$USER_HOME$/MySchedulerLibs/Crouton-master/library/croutonLibrary.iml" />
+      <module fileurl="file://$USER_HOME$/MySchedulerLibs/LicensesDialog-master/library/licenseDialogLibrary.iml" filepath="$USER_HOME$/MySchedulerLibs/LicensesDialog-master/library/licenseDialogLibrary.iml" />
+      <module fileurl="file://$USER_HOME$/MySchedulerLibs/Android-ProgressFragment-master/Android-ProgressFragment-master/progressfragment/progressfragment.iml" filepath="$USER_HOME$/MySchedulerLibs/Android-ProgressFragment-master/Android-ProgressFragment-master/progressfragment/progressfragment.iml" />
+    </modules>
+  </component>
+</project>
+

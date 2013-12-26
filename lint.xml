@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ContentDescription">
+        <ignore path="res/layout/card_shift_layout.xml" />
+    </issue>
+    <issue id="SdCardPath">
+        <ignore path="src/com/verobapps/myscheduler/database/ScheduleDbHelper.java" />
+    </issue>
+    <issue id="SetJavaScriptEnabled">
+        <ignore path="src/com/verobapps/myscheduler/MyWebViewFragment.java" />
+    </issue>
+    <issue id="SimpleDateFormat">
+        <ignore path="src/com/verobapps/myscheduler/AlarmManagerBroadcastReceiver.java" />
+        <ignore path="src/com/verobapps/myscheduler/GetScheduleAsyncTask.java" />
+        <ignore path="src/com/verobapps/myscheduler/ScheduleList.java" />
+    </issue>
+    <issue id="ValidFragment">
+        <ignore path="src/com/verobapps/myscheduler/DeleteCalendarShiftEventsAsyncTask.java" />
+        <ignore path="src/com/verobapps/myscheduler/GetScheduleAsyncTask.java" />
+        <ignore path="src/com/verobapps/myscheduler/InsertSchedule.java" />
+        <ignore path="src/com/verobapps/myscheduler/MyScheduleFragment.java" />
+        <ignore path="src/com/verobapps/myscheduler/SaveScheduleAsyncTask.java" />
+    </issue>
+    <issue id="Wakelock">
+        <ignore path="src/com/verobapps/myscheduler/AlarmManagerBroadcastReceiver.java" />
+    </issue>
+</lint>

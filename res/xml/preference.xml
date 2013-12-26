@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/general_settings_title" >
+        <CheckBoxPreference
+            android:key="hide_old_shifts"
+            android:title="@string/hide_old_shifts_title" />
+        <CheckBoxPreference
+            android:key="has_lunch_waiver"
+            android:summary="@string/has_lunch_waiver_summary"
+            android:title="@string/has_lunch_waiver_title" />
+
+        <Preference
+            android:key="clear_cache"
+            android:title="@string/clear_all_shifts_title" >
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/calendar_settings" >
+        <Preference
+            android:defaultValue="1"
+            android:key="calendar_account"
+            android:summary="@string/calendar_account_summary_default"
+            android:title="@string/calendar_account_title" >
+        </Preference>
+        <Preference
+            android:defaultValue="0"
+            android:key="default_color"
+            android:summary="@string/default_color_summary"
+            android:title="@string/default_color_title" >
+        </Preference>
+
+        <ListPreference
+            android:dialogTitle="@string/event_reminder_dialog_title"
+            android:entries="@array/event_reminder_entries"
+            android:entryValues="@array/event_reminder_entry_values"
+            android:key="event_reminder"
+            android:summary="@string/event_reminder_summary"
+            android:title="@string/event_reminder_title" />
+
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/about_title" >
+        <Preference
+            android:key="share_app"
+            android:summary="@string/share_app_summary"
+            android:title="@string/share_app_title" >
+        </Preference>
+        <Preference
+            android:key="join_facebook_group"
+            android:summary="@string/join_facebook_group_summary"
+            android:title="@string/join_facebook_group_title" >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://www.facebook.com/groups/MyScheduler/" />
+        </Preference>
+        <Preference
+            android:key="rate_myscheduler"
+            android:summary="@string/rate_myscheduler_summary"
+            android:title="@string/rate_myscheduler_title" >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="market://details?id=com.verobapps.myscheduler" />
+        </Preference>
+        <Preference
+            android:key="send_feedback"
+            android:title="@string/send_feedback_title" >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="@string/feedback_email_data" >
+                <extra
+                    android:name="android.intent.extra.SUBJECT"
+                    android:value="@string/feedback_email_subject" />
+            </intent>
+        </Preference>
+        <Preference
+            android:key="opensource"
+            android:title="@string/opensource" >
+        </Preference>
+        <!--
+        <Preference
+            android:key="credits"
+            android:title="@string/credits" >
+        </Preference>
+        -->
+        <Preference
+            android:key="version_number"
+            android:summary="@string/version_number_summary"
+            android:title="@string/version_number_title" >
+        </Preference>
+    </PreferenceCategory>
+
+    <!--
+    <PreferenceCategory android:title="@string/launch_preferences" >
+
+        
+             This PreferenceScreen tag serves as a screen break (similar to page break
+            in word processing). Like for other preference types, we assign a key
+            here so it is able to save and restore its instance state.
+       
+        <PreferenceScreen
+            android:key="screen_preference"
+            android:summary="@string/summary_screen_preference"
+            android:title="@string/title_screen_preference" >
+            <CheckBoxPreference
+                android:key="next_screen_checkbox_preference"
+                android:summary="@string/summary_next_screen_toggle_preference"
+                android:title="@string/title_next_screen_toggle_preference" />
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:summary="@string/summary_intent_preference"
+            android:title="@string/title_intent_preference" >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://www.android.com" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/preference_attributes" >
+        <CheckBoxPreference
+            android:key="parent_checkbox_preference"
+            android:summary="@string/summary_parent_preference"
+            android:title="@string/title_parent_preference" />
+
+        The visual style of a child is defined by this styled theme attribute.
+        
+    </PreferenceCategory>
+    -->
+
+</PreferenceScreen>

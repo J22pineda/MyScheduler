@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/card_bg" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/header_relative_layout"
+        android:background="?android:attr/activatedBackgroundIndicator" >
+
+        <ImageView
+            android:id="@+id/colorBorder"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/color_strip_bg"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:minHeight="72dp"
+            android:src="@color/border_color" />
+
+        <TextView
+            android:id="@+id/card_main_inner_simple_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/shift_length"
+            android:layout_toRightOf="@+id/colorBorder"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/shift_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:fontFamily="sans-serif-condensed"
+            android:padding="16dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/ltgray" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/header_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/activatedBackgroundIndicator" >
+
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/action_bar_blue" />
+    </RelativeLayout>
+
+</RelativeLayout>

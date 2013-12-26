@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.verobapps.myscheduler"
+    android:versionCode="114"
+    android:versionName="1.1.4" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Light_blue" >
+        <activity
+            android:name=".MainScheduleActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MyWebViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:parentActivityName="com.verobapps.myscheduler.MainScheduleActivity" >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.verobapps.myscheduler.MainScheduleActivity" />
+        </activity>
+        <activity
+            android:name=".MyPreferenceActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true" >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.verobapps.myscheduler.MainScheduleActivity" />
+        </activity>
+
+        <activity
+            android:name=".ColorPickerDialog"
+            android:label="Event Color"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" />
+        
+        <activity
+            android:name=".AccountPickerDialogActivity"
+            android:label="Default Calendar"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" />
+
+        <service android:name=".UpdateAlarmService" >
+        </service>
+    </application>
+</manifest>

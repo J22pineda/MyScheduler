@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyScheduler</string>
+    <string name="empty_list">No schedule found.\nTap\t +\t to add your schedule.</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_save_schedule">Save schedule</string>
+    <string name="menu_add_schedule">Add schedule</string>
+    <string name="menu_copy_schedule">Copy schedule</string>
+    <string name="context_menu_delete_title">Delete shift</string>
+    <string name="save_schedule_message">\nDo you want to save your schedule to your calendar?\n</string>
+    <string name="save_schedule_positive_btn_message">Go for it!</string>
+    <string name="save_schedule_negative_btn_message">Not now</string>
+    <string name="copy_schedule_progress_message">Copying your schedule\nHold on a sec&#8230;</string>
+    <string name="saving_schedule_message">Saving your schedule\nHold on a sec&#8230;</string>
+    <string name="crouton_saved_schedule_message">Schedule saved to your calendar.</string>
+    <string name="crouton_copy_failed_message">No schedule found! Please try again.</string>
+    <string name="crouton_copy_timeout_message">Request timed out! Please try again later.</string>
+    <string name="card_header_title_today">Today</string>
+    <string name="card_header_title_tomorrow">Tomorrow</string>
+    <string name="clear_cache_message">Do you really want to delete all calendar shift events created by MyScheduler?</string>
+    <string name="clear_cache_positive_btn_message">Do it!</string>
+    <string name="clear_cache_negative_btn_message">Not now</string>
+    <string name="deleting_cache_dialog_message">Deleting shift events\nHold on a sec&#8230;</string>
+    <string name="crouton_shifts_deleted_message">All calendar shift events were deleted.</string>
+    <string name="reset_default_calendar_color_btn_message">Set to default calendar color</string>
+    <string name="crouton_remove_shift_message">%s shift was deleted.</string>
+    <string name="crouton_remove_shifts_message">%s shifts were deleted.</string>
+    <string name="cab_select_message">1 shift selected</string>
+    <string name="cab_selected_message">%s shifts selected</string>
+    <string name="cab_total_hrs_message">%s total hrs.</string>
+    <string name="empty_account_list">No accounts found.</string>
+    <string name="context_menu_save_title">Save shift</string>
+    <string name="shift_item_hrs_string">%s hrs.</string>
+    <string name="crouton_save_shift_message">1 shift saved to your calendar. </string>
+    <string name="crouton_save_shifts_message">%s shifts saved to your calendar.</string>
+    <string name="saving_selected_shifts_dialog_message">Saving selected shifts\nHold on a sec&#8230;</string>
+    <!-- Preference strings -->
+    <string name="hide_old_shifts_title">Hide old shifts</string>
+    <string name="has_lunch_waiver_title">Lunch waiver</string>
+    <string name="has_lunch_waiver_summary">Check if you have a lunch waiver.</string>
+    <string name="calendar_account_title">Default calendar</string>
+    <string name="calendar_account_summary_default">Set the default calendar</string>
+    <string name="calendar_account_summary">Default calendar: %s</string>
+    <string name="default_color_title">Default shift color</string>
+    <string name="default_color_summary">Set the default color for calendar shifts.</string>
+    <string name="delete_calendar_shifts_summary">Shifts in calendar will be deleted.</string>
+    <string name="delete_calendar_shifts_title">Remove from Calendar</string>
+    <string name="event_reminder_title">Shift reminders</string>
+    <string name="event_reminder_summary">Set default shift reminder.</string>
+    <string name="event_reminder_dialog_title">Reminder before shift</string>
+    <string name="tutorial_preference_title">Tutorial</string>
+    <string name="opensource">Open source licenses</string>
+    <string name="version_number_title">Build version</string>
+    <string name="send_feedback_title">Send feedback</string>
+    <string name="general_settings_title">GENERAL SETTINGS</string>
+    <string name="about_title">ABOUT</string>
+    <string name="calendar_settings">CALENDAR SETTINGS</string>
+    <string name="credits">Credits</string>
+    <string name="clear_all_shifts_title">Clear shift cache</string>
+    <string name="share_app_summary">Let everyone know about MyScheduler!</string>
+    <string name="share_app_title">Share</string>
+    <string name="share_app_intent_message">Try out MyScheduler! It\'s crazy useful!\n\nhttps://play.google.com/store/apps/details?id=com.verobapps.myscheduler</string>
+    <string name="feedback_email_subject">MyScheduler Feedback</string>
+    <string name="feedback_email_data">mailto:j22pineda+MySchedulerFeedback@gmail.com</string>
+	<string name="join_facebook_group_title">Facebook group</string>
+	<string name="join_facebook_group_summary">Stay up to date on what\'s going on with MyScheduler.</string>
+    <string name="rate_myscheduler_title">Rate MyScheduler</string>
+    <string name="rate_myscheduler_summary">Enjoying MyScheduler? Please consider leaving a Play Store review.</string>
+	
+    <!-- VERSION NUMBER -->
+    <string name="version_number_summary">1.1.4</string>
+    <!--  -->
+
+</resources>
