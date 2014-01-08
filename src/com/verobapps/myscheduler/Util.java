@@ -1,8 +1,11 @@
 package com.verobapps.myscheduler;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.os.Build;
+import android.preference.PreferenceManager;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,6 +24,27 @@ public class Util {
     public static int JSOUP_TIMEOUT = 30000;
 
     private static final String STATUS_BAR_HEIGHT_RES_NAME = "status_bar_height";
+
+    public static int getTheme(Context mContext) {
+        SharedPreferences sp = PreferenceManager
+                .getDefaultSharedPreferences(mContext);
+
+        int theme = Integer.parseInt(sp.getString("theme", String.valueOf(R.style.Theme_Light_blue)));
+
+        switch (theme) {
+            case 0:
+                return R.style.Theme_Dark;
+            case 1:
+                return R.style.Theme_Light;
+            case 2:
+                return R.style.Theme_Light_blue;
+            case 3:
+                return R.style.Theme_Orange;
+
+            default:
+                return R.style.Theme_Light_blue;
+        }
+    }
 
     /*
     *   This will determine the size of the status bar
@@ -57,7 +81,29 @@ public class Util {
             params.gravity = Gravity.TOP;
 
             mStatusBarTintView.setLayoutParams(params);
-            mStatusBarTintView.setBackgroundColor(activity.getResources().getColor(R.color.status_bar_blue));
+            SharedPreferences sp = PreferenceManager
+                    .getDefaultSharedPreferences(activity);
+
+            int theme = Integer.parseInt(sp.getString("theme", String.valueOf(R.style.Theme_Light_blue)));
+            int statusBarColor;
+
+            switch (theme) {
+                case 0:
+                    statusBarColor = R.color.black;
+                    break;
+                case 1:
+                    statusBarColor = R.color.white_ab;
+                    break;
+                case 2:
+                    statusBarColor = R.color.status_bar_blue;
+                    break;
+                case 3:
+                    statusBarColor = R.color.orange_ab;
+                default:
+                    statusBarColor = R.color.status_bar_blue;
+            }
+
+            mStatusBarTintView.setBackgroundColor(activity.getResources().getColor(statusBarColor));
             decorViewGroup.addView(mStatusBarTintView);
 
 

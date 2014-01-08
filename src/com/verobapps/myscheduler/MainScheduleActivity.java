@@ -19,7 +19,7 @@ public class MainScheduleActivity extends FragmentActivity {
 	AlertDialog.Builder builder;
 	Activity activity;
 
-	@Override
+    @Override
 	protected void onDestroy() {
 		super.onDestroy();
 		Crouton.cancelAllCroutons();
@@ -27,11 +27,12 @@ public class MainScheduleActivity extends FragmentActivity {
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
+        setTheme(Util.getTheme(this));
 		super.onCreate(savedInstanceState);
 		activity = this;
 
-        // Set up system bar color
-        Util.setSystemBarColor(activity);
+        // Set up system bar color    **NOT READY**
+        //Util.setSystemBarColor(activity);
 
 		builder = new AlertDialog.Builder(this);
 		builder.setMessage(R.string.save_schedule_message);
@@ -95,6 +96,7 @@ public class MainScheduleActivity extends FragmentActivity {
 			alertDialog.show();
 			return true;
 		case R.id.action_settings:
+            finish();
 			Intent intent = new Intent(this, MyPreferenceActivity.class);
 			startActivity(intent);
 			overridePendingTransition(R.anim.slide_out_to_left, R.anim.fade_out);

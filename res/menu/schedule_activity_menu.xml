@@ -2,12 +2,12 @@
 
     <item
         android:id="@+id/action_add"
-        android:icon="@drawable/ic_action_new"
+        android:icon="?ab_new_icon"
         android:showAsAction="always"
         android:title="@string/menu_add_schedule"/>
     <item
         android:id="@+id/action_save"
-        android:icon="@drawable/ic_action_save"
+        android:icon="?ab_save_icon"
         android:showAsAction="always"
         android:title="@string/menu_save_schedule"/>
     <!-- settings disabled for beta  -->

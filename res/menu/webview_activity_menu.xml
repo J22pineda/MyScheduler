@@ -2,14 +2,9 @@
 
     <item
         android:id="@+id/action_copy"
-        android:icon="@drawable/ic_action_copy"
+        android:icon="?ab_copy_icon"
         android:showAsAction="always"
         android:title="@string/menu_copy_schedule"/>
-    
-    <!-- settings disabled for beta -->
-    <item
-        android:id="@+id/action_settings"
-        android:showAsAction="never"
-        android:title="@string/menu_settings"/>
+
 
 </menu>

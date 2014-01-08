@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/action_cab_save"
-        android:icon="@drawable/ic_action_save"
-        android:showAsAction="always"
-        android:title="@string/context_menu_save_title"/>
+            android:id="@+id/action_cab_share"
+            android:icon="?ab_share_icon"
+            android:showAsAction="always"
+            android:title="@string/context_menu_share_title"/>
+
     <item
-        android:id="@+id/action_delete"
-        android:icon="@drawable/ic_action_discard"
-        android:showAsAction="always"
-        android:title="@string/context_menu_delete_title"/>
+            android:id="@+id/action_cab_save"
+            android:icon="?ab_save_icon"
+            android:showAsAction="always"
+            android:title="@string/context_menu_save_title"/>
+    <item
+            android:id="@+id/action_delete"
+            android:icon="?ab_delete_icon"
+            android:showAsAction="always"
+            android:title="@string/context_menu_delete_title"/>
 
 </menu>

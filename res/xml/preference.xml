@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
 
-    <PreferenceCategory android:title="@string/general_settings_title" >
+    <PreferenceCategory android:title="@string/appearance_settings_title" >
         <CheckBoxPreference
-            android:key="hide_old_shifts"
-            android:title="@string/hide_old_shifts_title" />
+                android:key="hide_old_shifts"
+                android:title="@string/hide_old_shifts_title" />
+
+        <ListPreference
+                android:dialogTitle="@string/theme_dialog_title"
+                android:entries="@array/theme_entries"
+                android:entryValues="@array/theme_entry_values"
+                android:key="theme"
+                android:summary="@string/theme_summary"
+                android:title="@string/theme_title" />
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/general_settings_title" >
+
         <CheckBoxPreference
             android:key="has_lunch_waiver"
             android:summary="@string/has_lunch_waiver_summary"
@@ -80,7 +94,9 @@
         <Preference
             android:key="credits"
             android:title="@string/credits" >
-        </Preference>
+        </Preference>
+
+
         -->
         <Preference
             android:key="version_number"
@@ -95,7 +111,9 @@
         
              This PreferenceScreen tag serves as a screen break (similar to page break
             in word processing). Like for other preference types, we assign a key
-            here so it is able to save and restore its instance state.
+            here so it is able to save and restore its instance state.
+
+
        
         <PreferenceScreen
             android:key="screen_preference"
@@ -122,7 +140,12 @@
 
         The visual style of a child is defined by this styled theme attribute.
         
-    </PreferenceCategory>
+    </PreferenceCategory>
+
+
+
+
+
     -->
 
 </PreferenceScreen>

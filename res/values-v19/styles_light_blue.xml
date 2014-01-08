@@ -7,9 +7,9 @@
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
-  
+
           http://www.apache.org/licenses/LICENSE-2.0
-  
+
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -29,17 +29,38 @@
         <item name="android:actionModeBackground">@drawable/cab_background_top_light_blue</item>
         <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_light_blue</item>
         <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Light_blue</item>
-        
-        <item name="android:activatedBackgroundIndicator">@drawable/activated_bckgrnd</item>
 
+        <item name="android:activatedBackgroundIndicator">@drawable/activated_bckgrnd</item>
+        <item name="android:windowBackground">@color/listview_background_gray</item>
+
+
+        <!--
+        ********NOT READY*********
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:fitsSystemWindows">true</item>
+        -->
 
-                <!-- Light.DarkActionBar specific -->
+
+        <item name="card_bg">@drawable/card_bg</item>
+        <item name="card_shift_text_color">@color/black</item>
+        <item name="card_shift_title_color">@color/action_bar_blue</item>
+        <item name="card_shift_hour_color">@color/ltgray</item>
+
+
+        <item name="ab_overflow_icon">@drawable/ic_action_overflow_dark</item>
+        <item name="ab_save_icon">@drawable/ic_action_save_dark</item>
+        <item name="ab_new_icon">@drawable/ic_action_new_dark</item>
+        <item name="ab_copy_icon">@drawable/ic_action_copy_dark</item>
+        <item name="ab_share_icon">@drawable/ic_action_share_dark</item>
+        <item name="ab_delete_icon">@drawable/ic_action_discard_dark</item>
+
+
+
+        <!-- Light.DarkActionBar specific -->
         <item name="android:actionBarWidgetTheme">@style/Theme.Light_blue.Widget</item>
-        
+
     </style>
-    
+
 
     <style name="ActionBar.Solid.Light_blue" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
         <item name="android:background">@drawable/ab_solid_light_blue</item>
@@ -47,7 +68,7 @@
         <item name="android:backgroundSplit">@drawable/ab_bottom_solid_light_blue</item>
         <item name="android:progressBarStyle">@style/ProgressBar.Light_blue</item>
     </style>
-    
+
 
     <style name="ActionBar.Transparent.Light_blue" parent="@android:style/Widget.Holo.ActionBar">
         <item name="android:background">@drawable/ab_transparent_light_blue</item>
@@ -55,7 +76,7 @@
     </style>
 
     <style name="PopupMenu.Light_blue" parent="@android:style/Widget.Holo.ListPopupWindow">
-        <item name="android:popupBackground">@drawable/menu_dropdown_panel_light_blue</item>	
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_light_blue</item>
     </style>
 
     <style name="DropDownListView.Light_blue" parent="@android:style/Widget.Holo.ListView.DropDown">
@@ -71,11 +92,11 @@
         <item name="android:popupBackground">@drawable/menu_dropdown_panel_light_blue</item>
         <item name="android:dropDownSelector">@drawable/selectable_background_light_blue</item>
     </style>
-    
+
     <style name="ProgressBar.Light_blue" parent="@android:style/Widget.Holo.ProgressBar.Horizontal">
         <item name="android:progressDrawable">@drawable/progress_horizontal_light_blue</item>
     </style>
-    
+
     <style name="ActionButton.CloseMode.Light_blue" parent="@android:style/Widget.Holo.ActionButton.CloseMode">
         <item name="android:background">@drawable/btn_cab_done_light_blue</item>
     </style>

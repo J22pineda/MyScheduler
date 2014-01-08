@@ -31,10 +31,14 @@
     <string name="cab_total_hrs_message">%s total hrs.</string>
     <string name="empty_account_list">No accounts found.</string>
     <string name="context_menu_save_title">Save shift</string>
+    <string name="context_menu_share_title">Share</string>
     <string name="shift_item_hrs_string">%s hrs.</string>
     <string name="crouton_save_shift_message">1 shift saved to your calendar. </string>
     <string name="crouton_save_shifts_message">%s shifts saved to your calendar.</string>
     <string name="saving_selected_shifts_dialog_message">Saving selected shifts\nHold on a sec&#8230;</string>
+    <string name="share_shifts_progress_dialog_message">Hold on a sec&#8230;</string>
+    <string name="share_shifts_dialog_message">Share shifts via</string>
+    <string name="shared_via_myscheduler">- via MyScheduler</string>
     <!-- Preference strings -->
     <string name="hide_old_shifts_title">Hide old shifts</string>
     <string name="has_lunch_waiver_title">Lunch waiver</string>
@@ -67,9 +71,12 @@
 	<string name="join_facebook_group_summary">Stay up to date on what\'s going on with MyScheduler.</string>
     <string name="rate_myscheduler_title">Rate MyScheduler</string>
     <string name="rate_myscheduler_summary">Enjoying MyScheduler? Please consider leaving a Play Store review.</string>
+    <string name="appearance_settings_title">APPEARANCE</string>
+    <string name="theme_dialog_title">Choose theme</string>
+    <string name="theme_summary">Choose a theme for MyScheduler</string>
+    <string name="theme_title">Themes</string>
 	
     <!-- VERSION NUMBER -->
-    <string name="version_number_summary">1.1.4</string>
-    <!--  -->
+    <string name="version_number_summary">1.2</string>
 
 </resources>

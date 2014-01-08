@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="card_bg" format="reference"/>
+    <attr name="card_shift_text_color" format="reference"/>
+    <attr name="card_shift_title_color" format="reference"/>
+    <attr name="card_shift_hour_color" format="reference"/>
+
+    <attr name="ab_new_icon" format="reference"/>
+    <attr name="ab_save_icon" format="reference"/>
+    <attr name="ab_overflow_icon" format="reference"/>
+    <attr name="ab_share_icon" format="reference"/>
+    <attr name="ab_copy_icon" format="reference"/>
+    <attr name="ab_delete_icon" format="reference"/>
+
+</resources>

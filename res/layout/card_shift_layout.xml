@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/card_bg" >
+    android:background="?card_bg" >
 
     <RelativeLayout
         android:id="@+id/relativeLayout1"
@@ -31,7 +31,7 @@
             android:layout_toLeftOf="@+id/shift_length"
             android:layout_toRightOf="@+id/colorBorder"
             android:fontFamily="sans-serif-light"
-            android:textColor="@color/black"
+            android:textColor="?card_shift_text_color"
             android:textSize="20sp" />
 
         <TextView
@@ -43,7 +43,7 @@
             android:fontFamily="sans-serif-condensed"
             android:padding="16dp"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="@color/ltgray" />
+            android:textColor="?card_shift_hour_color" />
 
     </RelativeLayout>
 
@@ -63,7 +63,7 @@
             android:layout_marginTop="4dp"
             android:fontFamily="sans-serif-condensed"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="@color/action_bar_blue" />
+            android:textColor="?card_shift_title_color" />
     </RelativeLayout>
 
 </RelativeLayout>

@@ -9,6 +9,13 @@
         <option name="name" value="debug_myscheduler" />
         <option name="pid" value="" />
       </filter>
+      <filter>
+        <option name="logLevel" value="verbose" />
+        <option name="logMessagePattern" value="" />
+        <option name="logTagPattern" value="com.verobapps.myscheduler" />
+        <option name="name" value="myScheduler" />
+        <option name="pid" value="" />
+      </filter>
     </filters>
   </component>
   <component name="AndroidDesignerProfile">
@@ -17,7 +24,7 @@
         <option name="device" value="3.7in WVGA (Nexus One)" />
         <option name="deviceConfiguration" value="Portrait" />
         <option name="targetHashString" value="android-14" />
-        <option name="theme" value="Theme.Holo.Light.DarkActionBar" />
+        <option name="theme" value="Theme.Light_blue" />
       </profile>
     </option>
     <option name="selection" value="[Full]" />
@@ -35,23 +42,58 @@
     </option>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="debug_myscheduler" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="DELETED" beforePath="C:\Users\Javier\Dropbox\MyScheduler\res\values-v19\styles_light_blue.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_action_copy.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_action_copy.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_action_copy.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_action_copy.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_action_copy.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_action_copy.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xxhdpi/ic_action_copy.png" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/ic_action_copy.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_action_discard.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_action_discard.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_action_discard.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_action_discard.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_action_discard.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_action_discard.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xxhdpi/ic_action_discard.png" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/ic_action_discard.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_action_new.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_action_new.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_action_new.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_action_new.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_action_new.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_action_new.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xxhdpi/ic_action_new.png" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/ic_action_new.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_action_save.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_action_save.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_action_save.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_action_save.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_action_save.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_action_save.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xxhdpi/ic_action_save.png" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/ic_action_save.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/verobapps/myscheduler/MainScheduleActivity.java" afterPath="$PROJECT_DIR$/src/com/verobapps/myscheduler/MainScheduleActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/verobapps/myscheduler/MyPreferenceActivity.java" afterPath="$PROJECT_DIR$/src/com/verobapps/myscheduler/MyPreferenceActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/verobapps/myscheduler/MyPreferenceFragment.java" afterPath="$PROJECT_DIR$/src/com/verobapps/myscheduler/MyPreferenceFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/verobapps/myscheduler/MyScheduleFragment.java" afterPath="$PROJECT_DIR$/src/com/verobapps/myscheduler/MyScheduleFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/verobapps/myscheduler/MyWebViewActivity.java" afterPath="$PROJECT_DIR$/src/com/verobapps/myscheduler/MyWebViewActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/verobapps/myscheduler/Util.java" afterPath="$PROJECT_DIR$/src/com/verobapps/myscheduler/Util.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/arrays.xml" afterPath="$PROJECT_DIR$/res/values/arrays.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/card_shift_layout.xml" afterPath="$PROJECT_DIR$/res/layout/card_shift_layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/colors.xml" afterPath="$PROJECT_DIR$/res/values/colors.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/menu/context_action_menu.xml" afterPath="$PROJECT_DIR$/res/menu/context_action_menu.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/main_schedule_activity.xml" afterPath="$PROJECT_DIR$/res/layout/main_schedule_activity.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/xml/preference.xml" afterPath="$PROJECT_DIR$/res/xml/preference.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/menu/schedule_activity_menu.xml" afterPath="$PROJECT_DIR$/res/menu/schedule_activity_menu.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/styles_light_blue.xml" afterPath="$PROJECT_DIR$/res/values/styles_light_blue.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/menu/webview_activity_menu.xml" afterPath="$PROJECT_DIR$/res/menu/webview_activity_menu.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/webview_layout.xml" afterPath="$PROJECT_DIR$/res/layout/webview_layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MyScheduler.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/MainActivity.java" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1382351228785" ignored="false" />
     <file path="/WebViewActivity.java" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1382351323943" ignored="false" />
-    <file path="/Dummy.txt" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1388062158070" ignored="false" />
+    <file path="/Dummy.txt" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1389155217753" ignored="false" />
     <file path="/webview_layout.xml" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1381305794110" ignored="false" />
-    <file path="/AndroidManifest.xml" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1382678113559" ignored="false" />
+    <file path="/AndroidManifest.xml" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1388985476928" ignored="false" />
     <file path="/ScheduleList.java" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1382348444486" ignored="false" />
-    <file path="/Util.java" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1388058064324" ignored="false" />
+    <file path="/Util.java" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1388989448834" ignored="false" />
     <file path="/schedule_list_layout.xml" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1381833434694" ignored="false" />
-    <file path="/card_bg.xml" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1381829513036" ignored="false" />
+    <file path="/card_bg.xml" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1388785788328" ignored="false" />
     <file path="$PROJECT_DIR$/stickyLibrary/res/values/strings.xml" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1381831728541" ignored="false" />
     <file path="/fragment.java" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1382676281834" ignored="false" />
     <file path="/MyScheduledDay.java" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1382346259697" ignored="false" />
@@ -62,7 +104,7 @@
     <file path="/styles.xml" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1382674594500" ignored="false" />
     <file path="/TutorialPagerActivity.java" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1382762256207" ignored="false" />
     <file path="/themes.xml" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1382678175048" ignored="false" />
-    <file path="/MainScheduleActivity.java" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1388053819642" ignored="false" />
+    <file path="/MainScheduleActivity.java" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1389156425285" ignored="false" />
     <file path="$USER_HOME$/MySchedulerLibs/Android-ProgressFragment-master/Android-ProgressFragment-master/progressfragment/res/layout/main.xml" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1382758817983" ignored="false" />
     <file path="$USER_HOME$/MySchedulerLibs/StickyListHeaders-master/library/src/se/emilsjolander/stickylistheaders/AdapterWrapper.java" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1382759093947" ignored="false" />
     <file path="$USER_HOME$/MySchedulerLibs/StickyListHeaders-master/library/src/se/emilsjolander/stickylistheaders/StickyListHeadersAdapter.java" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1382759093947" ignored="false" />
@@ -124,13 +166,31 @@
     <file path="$PROJECT_DIR$/CardsUI/gen/com/example/CardsUI/BuildConfig.java" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1382780998088" ignored="false" />
     <file path="$USER_HOME$/MySchedulerLibs/cardslib-master/library/res/values/strings.xml" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1382781326349" ignored="false" />
     <file path="$USER_HOME$/MySchedulerLibs/cardslib-master/library/gen/com/example/cardlibrary/R.java" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1382781326349" ignored="false" />
-    <file path="/styles_light_blue.xml" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1388052704151" ignored="false" />
+    <file path="/styles_light_blue.xml" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1389156645497" ignored="false" />
     <file path="/main_schedule_activity.xml" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1388050352699" ignored="false" />
-    <file path="/MyScheduleFragment.java" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1388053893953" ignored="false" />
-    <file path="/colors.xml" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1388054599245" ignored="false" />
-    <file path="/MyWebViewActivity.java" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1388054787541" ignored="false" />
-    <file path="/MyPreferenceActivity.java" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1388054900509" ignored="false" />
+    <file path="/MyScheduleFragment.java" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1389159424030" ignored="false" />
+    <file path="/colors.xml" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1388990916930" ignored="false" />
+    <file path="/MyWebViewActivity.java" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1389156461423" ignored="false" />
+    <file path="/MyPreferenceActivity.java" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1389156449036" ignored="false" />
     <file path="/.gitignore" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1388059039195" ignored="false" />
+    <file path="/preference.xml" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1388098706768" ignored="false" />
+    <file path="/strings.xml" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1389159125505" ignored="false" />
+    <file path="/arrays.xml" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1388989476887" ignored="false" />
+    <file path="/MyPreferenceFragment.java" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1388545458582" ignored="false" />
+    <file path="/card_shift_layout.xml" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1388875054521" ignored="false" />
+    <file path="/attrs.xml" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1388992745713" ignored="false" />
+    <file path="/styles_dark.xml" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1388987437479" ignored="false" />
+    <file path="/card_bg_dark.xml" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1388874540085" ignored="false" />
+    <file path="/schedule_activity_menu.xml" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1388876680324" ignored="false" />
+    <file path="/context_action_menu.xml" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1388995331371" ignored="false" />
+    <file path="/webview_activity_menu.xml" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1388877181019" ignored="false" />
+    <file path="/AccountPickerDialogActivity.java" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1388984990091" ignored="false" />
+    <file path="/ColorPickerDialog.java" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1388878197313" ignored="false" />
+    <file path="/AccountPickerDialogFragment.java" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1388984475270" ignored="false" />
+    <file path="/styles_light.xml" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1388994997677" ignored="false" />
+    <file path="/styles_orange.xml" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1388994079787" ignored="false" />
+    <file path="/card_bg_orange.xml" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1388990169204" ignored="false" />
+    <file path="/activated_bg_orange.xml" changelist="ecdd591e-b36d-4f0d-ab84-49ca0b70ebf6" time="1388993830816" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,10 +256,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainScheduleActivity.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/verobapps/myscheduler/MainScheduleActivity.java">
+      <file leaf-file-name="MyScheduleFragment.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/verobapps/myscheduler/MyScheduleFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="41" selection-start="924" selection-end="924" vertical-scroll-proportion="0.3747927">
+            <state line="1107" column="39" selection-start="43445" selection-end="43445" vertical-scroll-proportion="0.53571427">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1602#1613#0" expanded="true" />
+                <element signature="e#23527#23533#0" expanded="true" />
+                <element signature="e#42071#42077#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="69" selection-start="3030" selection-end="3030" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -223,22 +297,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/verobapps/myscheduler/database/ScheduleDbHelper.java" />
-        <option value="$PROJECT_DIR$/src/com/verobapps/myscheduler/MyProgressFragment.java" />
-        <option value="$USER_HOME$/MySchedulerLibs/cardslib-master/library/src/main/java/it/gmariotti/cardslib/library/view/listener/UndoBarController.java" />
-        <option value="$PROJECT_DIR$/res/values/styles_light_blue.xml" />
-        <option value="$PROJECT_DIR$/res/layout/main_schedule_activity.xml" />
-        <option value="$PROJECT_DIR$/res/values-v19/styles_light_blue.xml" />
         <option value="$PROJECT_DIR$/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/src/com/verobapps/myscheduler/MyScheduleFragment.java" />
+        <option value="$PROJECT_DIR$/res/values/attrs.xml" />
+        <option value="$PROJECT_DIR$/res/layout/card_shift_layout.xml" />
+        <option value="$PROJECT_DIR$/res/values/styles_dark.xml" />
+        <option value="$PROJECT_DIR$/res/drawable/activated_bg_orange.xml" />
+        <option value="$PROJECT_DIR$/res/values/styles_orange.xml" />
+        <option value="$PROJECT_DIR$/res/values/arrays.xml" />
+        <option value="$PROJECT_DIR$/res/values/styles_light.xml" />
+        <option value="$PROJECT_DIR$/res/menu/context_action_menu.xml" />
+        <option value="$PROJECT_DIR$/src/com/verobapps/myscheduler/MainScheduleActivity.java" />
         <option value="$PROJECT_DIR$/src/com/verobapps/myscheduler/MyPreferenceActivity.java" />
         <option value="$PROJECT_DIR$/src/com/verobapps/myscheduler/MyWebViewActivity.java" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/res/values/styles_light_blue.xml" />
+        <option value="$PROJECT_DIR$/res/values-v19/styles_light_blue.xml" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/src/com/verobapps/myscheduler/Util.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/com/verobapps/myscheduler/MainScheduleActivity.java" />
-        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/com/verobapps/myscheduler/MyScheduleFragment.java" />
       </list>
     </option>
   </component>
@@ -258,7 +332,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="1" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -283,6 +357,49 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="All">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="MyScheduler">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="MyScheduler">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="MyScheduler">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="MyScheduler">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="res">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -301,10 +418,76 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyScheduler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyScheduler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myscheduler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyScheduler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyScheduler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyScheduler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyScheduler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values-v19" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyScheduler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyScheduler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -314,29 +497,30 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="copyright" />
+    <property name="options.lastSelected" value="reference.projectsettings.compiler.excludes" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/simple-xml-2.7.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/res" />
     <property name="AndroidLayoutSelectedEditor" value="text-editor" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Javier\Dropbox\MyScheduler\res\values-v19" />
-      <recent name="C:\Users\Javier\Dropbox\MyScheduler\libs" />
-      <recent name="C:\Users\Javier\Dropbox\MyScheduler\res" />
+      <recent name="C:\Users\Javier\Dropbox\MyScheduler" />
       <recent name="C:\Users\Javier\Dropbox\MyScheduler\res\drawable-hdpi" />
       <recent name="C:\Users\Javier\Dropbox\MyScheduler\res\drawable-mdpi" />
+      <recent name="C:\Users\Javier\Dropbox\MyScheduler\res\drawable-xhdpi" />
+      <recent name="C:\Users\Javier\Dropbox\MyScheduler\res\drawable-xxhdpi" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Javier\Dropbox\MyScheduler\res\drawable-hdpi" />
+      <recent name="C:\Users\Javier\Dropbox\MyScheduler\res" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.MyScheduler">
@@ -372,19 +556,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -410,6 +581,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -556,28 +740,28 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.61084527" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.61084527" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.67145133" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3859649" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32695374" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32695374" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3859649" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.61403507" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.67145133" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32750398" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24924242" sideWeight="0.7065391" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29346094" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.67304623" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1969697" sideWeight="0.67304623" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32695374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -646,105 +830,119 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/verobapps/myscheduler/MyPreferenceFragment.java">
+    <entry file="file://$PROJECT_DIR$/res/values/styles_light.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="29" selection-start="1725" selection-end="1725" vertical-scroll-proportion="0.7103064">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        <state line="12" column="66" selection-start="574" selection-end="574" vertical-scroll-proportion="0.40389973">
+          <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/styles_light_blue.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="1832" selection-end="1832" vertical-scroll-proportion="0.04735376" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main_schedule_activity.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="55" selection-start="226" selection-end="250" vertical-scroll-proportion="-2.56" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values-v19/styles_light_blue.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="67" selection-start="1957" selection-end="1957" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/card_shift_layout.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="31.12" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/colors_light_blue.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="41" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0" />
+        <state line="31" column="26" selection-start="1097" selection-end="1106" vertical-scroll-proportion="0.83008355">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/verobapps/myscheduler/MyScheduleFragment.java">
+    <entry file="file://$PROJECT_DIR$/res/values/arrays.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="8" selection-start="2160" selection-end="2160" vertical-scroll-proportion="0.0">
+        <state line="59" column="32" selection-start="1634" selection-end="1634" vertical-scroll-proportion="0.33704737">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/styles_orange.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="78" selection-start="1686" selection-end="1686" vertical-scroll-proportion="0.55710304">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/attrs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="37" selection-start="234" selection-end="255" vertical-scroll-proportion="0.2367688">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/card_shift_layout.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="61" selection-start="1944" selection-end="1944" vertical-scroll-proportion="0.4071856" />
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/verobapps/myscheduler/Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="49" selection-start="1114" selection-end="1114" vertical-scroll-proportion="0.68786126">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/verobapps/myscheduler/MyPreferenceFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="13" selection-start="598" selection-end="598" vertical-scroll-proportion="-2.0648918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/menu/context_action_menu.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="53" selection-start="203" selection-end="203" vertical-scroll-proportion="0.113144755" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/styles_light_blue.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="87" selection-start="1916" selection-end="1916" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values-v19/styles_light_blue.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="31" selection-start="915" selection-end="915" vertical-scroll-proportion="0.39940828">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/verobapps/myscheduler/MyWebViewActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="51" selection-start="1115" selection-end="1115" vertical-scroll-proportion="0.43367347">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/verobapps/myscheduler/MyPreferenceActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="8" selection-start="355" selection-end="381" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/verobapps/myscheduler/MyWebViewActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="34" selection-start="1059" selection-end="1059" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="61" selection-start="5232" selection-end="5232" vertical-scroll-proportion="0.8507853" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="243" column="9" selection-start="2961" selection-end="2961" vertical-scroll-proportion="0.9434276" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/verobapps/myscheduler/Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="10" selection-start="582" selection-end="582" vertical-scroll-proportion="0.3220339">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="37" selection-start="212" selection-end="212" vertical-scroll-proportion="0.14096186">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="24" selection-end="24" vertical-scroll-proportion="0.056384742">
+        <state line="15" column="50" selection-start="467" selection-end="467" vertical-scroll-proportion="0.31114808">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/verobapps/myscheduler/MainScheduleActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="41" selection-start="924" selection-end="924" vertical-scroll-proportion="0.3747927">
+        <state line="33" column="52" selection-start="941" selection-end="941" vertical-scroll-proportion="0.6505824">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="69" selection-start="3030" selection-end="3030" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/verobapps/myscheduler/MyScheduleFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1107" column="39" selection-start="43445" selection-end="43445" vertical-scroll-proportion="0.53571427">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1602#1613#0" expanded="true" />
+            <element signature="e#23527#23533#0" expanded="true" />
+            <element signature="e#42071#42077#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -816,6 +1014,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

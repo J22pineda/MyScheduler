@@ -18,10 +18,11 @@ public class MyWebViewActivity extends FragmentActivity {
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
+        setTheme(Util.getTheme(this));
 
-        // Set up system bar color
-        Util.setSystemBarColor(this);
+		super.onCreate(savedInstanceState);
+        // Set up system bar color    **NOT READY**
+        //Util.setSystemBarColor(this);
 
 		setContentView(R.layout.webview_layout);
 
@@ -54,19 +55,27 @@ public class MyWebViewActivity extends FragmentActivity {
 		case R.id.action_copy:
 			new GetScheduleAsyncTask(this).execute();
 			return true;
-		case R.id.action_settings:
-			Intent intent = new Intent(this, MyPreferenceActivity.class);
-			startActivity(intent);
-			overridePendingTransition(R.anim.slide_out_to_left, R.anim.fade_out);
-			return true;
 		case android.R.id.home:
-			NavUtils.navigateUpFromSameTask(this);
+            finish();
+            Intent intent = new Intent(this, MainScheduleActivity.class);
+            startActivity(intent);
+            overridePendingTransition(R.anim.fade_in, R.anim.slide_out_to_right);
 			return true;
 
 		default:
 			return super.onOptionsItemSelected(item);
 		}
 	}
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+
+        Intent intent = new Intent(this, MainScheduleActivity.class);
+        startActivity(intent);
+        overridePendingTransition(R.anim.fade_in, R.anim.slide_out_to_right);
+
+    }
 
 	@Override
 	protected void onPause() {

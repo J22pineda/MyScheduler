@@ -116,23 +116,38 @@ public class MyPreferenceFragment extends PreferenceFragment {
 		});
 
 		myPref = (Preference) findPreference("join_facebook_group");
-		myPref.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+        myPref.setOnPreferenceClickListener(new OnPreferenceClickListener() {
 
-			@Override
-			public boolean onPreferenceClick(Preference preference) {
-				// Launch Facebook group
-				try {
-					Intent intent = new Intent(Intent.ACTION_VIEW, Uri
-							.parse("fb://group/619807184732229"));
-					startActivity(intent);
-				} catch (Exception e) {
-					startActivity(new Intent(Intent.ACTION_VIEW, Uri
-							.parse("http://www.facebook.com/groups/MyScheduler/")));
-				}
+            @Override
+            public boolean onPreferenceClick(Preference preference) {
+                // Launch Facebook group
+                try {
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri
+                            .parse("fb://group/619807184732229"));
+                    startActivity(intent);
+                } catch (Exception e) {
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri
+                            .parse("http://www.facebook.com/groups/MyScheduler/")));
+                }
 
-				return false;
-			}
-		});
+                return false;
+            }
+        });
+
+        myPref = (Preference) findPreference("theme");
+        myPref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+            @Override
+            public boolean onPreferenceChange(Preference preference, Object newValue) {
+
+                Intent intent = getActivity().getIntent();
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+                getActivity().overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+
+
+                return true;
+            }
+        });
 
 	}
 

@@ -1,5 +1,6 @@
 package com.verobapps.myscheduler;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.NavUtils;
@@ -9,10 +10,11 @@ public class MyPreferenceActivity extends FragmentActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
+        setTheme(Util.getTheme(this));
 
-        // Set up system bar color
-        Util.setSystemBarColor(this);
+		super.onCreate(savedInstanceState);
+        // Set up system bar color   **NOT READY**
+        //Util.setSystemBarColor(this);
 
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -22,12 +24,25 @@ public class MyPreferenceActivity extends FragmentActivity {
 
 	}
 
-	@Override
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+
+        Intent intent = new Intent(this, MainScheduleActivity.class);
+        startActivity(intent);
+        overridePendingTransition(R.anim.fade_in, R.anim.slide_out_to_right);
+
+    }
+
+    @Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		// Handle presses on the action bar items
 		switch (item.getItemId()) {
 		case android.R.id.home:
-			NavUtils.navigateUpFromSameTask(this);
+            finish();
+            Intent intent = new Intent(this, MainScheduleActivity.class);
+            startActivity(intent);
+            overridePendingTransition(R.anim.fade_in, R.anim.slide_out_to_right);
 			return true;
 		default:
 			return super.onOptionsItemSelected(item);
