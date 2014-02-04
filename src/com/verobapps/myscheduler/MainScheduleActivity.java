@@ -34,6 +34,9 @@ public class MainScheduleActivity extends FragmentActivity {
         // Set up system bar color    **NOT READY**
         //Util.setSystemBarColor(activity);
 
+        // Force menu overflow on devices with hardware menu button
+        Util.forceOverflowMenu(this);
+
 		builder = new AlertDialog.Builder(this);
 		builder.setMessage(R.string.save_schedule_message);
 

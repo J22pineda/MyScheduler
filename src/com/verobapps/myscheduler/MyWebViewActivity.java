@@ -16,6 +16,8 @@ public class MyWebViewActivity extends FragmentActivity {
 			+ ".MAXIMIZE/menuitem.427e06f258729e615927f59354276099/?javax.portlet"
 			+ ".tpst=65fa5153808737f60d9cab10b5e26099_ws_MX&javax.portlet.prp_65fa5153808737f60d9cab10b5e26099_viewID=maximized&javax.portlet.prp_65fa5153808737f60d9cab10b5e26099_dsfnavstate=%252FEHHLSM%252FViewCalendar.do%253Bjsessionid%253DD2AB05CE88A7E2DF075DC48F81CD37C9&beanID=1406643234&viewID=maximized&method=loadViewMySchedule&a=1";
 
+    public static String SCHEDULE_HTML = "";
+
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
         setTheme(Util.getTheme(this));
@@ -76,15 +78,4 @@ public class MyWebViewActivity extends FragmentActivity {
         overridePendingTransition(R.anim.fade_in, R.anim.slide_out_to_right);
 
     }
-
-	@Override
-	protected void onPause() {
-		// TODO Auto-generated method stub
-		super.onPause();
-		SCHEDULE_LINK = "https://enterpriseportal.disney.com/site/dlr/template"
-				+ ".MAXIMIZE/menuitem.427e06f258729e615927f59354276099/?javax.portlet"
-				+ ".tpst=65fa5153808737f60d9cab10b5e26099_ws_MX&javax.portlet.prp_65fa5153808737f60d9cab10b5e26099_viewID=maximized&javax.portlet.prp_65fa5153808737f60d9cab10b5e26099_dsfnavstate=%252FEHHLSM%252FViewCalendar.do%253Bjsessionid%253DD2AB05CE88A7E2DF075DC48F81CD37C9&beanID=1406643234&viewID=maximized&method=loadViewMySchedule&a=1";
-
-	}
-
 }

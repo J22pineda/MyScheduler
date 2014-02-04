@@ -5,15 +5,12 @@ import android.animation.ObjectAnimator;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebBackForwardList;
-import android.webkit.WebChromeClient;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
+import android.webkit.*;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import de.keyboardsurfer.android.widget.crouton.Crouton;
@@ -23,16 +20,12 @@ public class MyWebViewFragment extends Fragment {
 
 	private WebView mWebView;
 	private boolean mIsWebViewAvailable;
-	Activity activity;
 
 	private ProgressBar progressBar;
 
-	/**
-	 * Creates a new fragment which loads the supplied url as soon as it can
-	 * 
-	 * @param url
-	 *            the url to load once initialised
-	 */
+    /**
+     * Creates a new fragment which loads the supplied url as soon as it can
+     */
 	public static MyWebViewFragment newInstance() {
 		MyWebViewFragment fragment = new MyWebViewFragment();
 
@@ -58,8 +51,6 @@ public class MyWebViewFragment extends Fragment {
 			public boolean onKey(View v, int keyCode, KeyEvent event) {
 				if ((keyCode == KeyEvent.KEYCODE_BACK) && mWebView.canGoBack()) {
 					if(mWebView.canGoBack()){
-						WebBackForwardList history = mWebView.copyBackForwardList();
-						MyWebViewActivity.SCHEDULE_LINK = history.getItemAtIndex(history.getCurrentIndex() - 1).getOriginalUrl();
 						mWebView.goBack();
 					}
 					
@@ -76,6 +67,23 @@ public class MyWebViewFragment extends Fragment {
 		slideIn();
 
 		mWebView.setWebChromeClient(new WebChromeClient() {
+
+            public boolean onConsoleMessage(ConsoleMessage cmsg){
+                //ADDED WORK AROUND FOR 3rd WEEK SCHEDULE
+                // check secret prefix
+                if (cmsg.message().startsWith("MAGIC"))
+                {
+                    String msg = cmsg.message().substring(5); // strip off prefix
+
+                    MyWebViewActivity.SCHEDULE_HTML = msg;
+
+                    return true;
+                }
+
+                return false;
+            }
+            // END WORK AROUND
+
 			public void onProgressChanged(WebView view, int progress) {
 				progressBar.setProgress(progress);
 				if (progress == 100) {
@@ -128,18 +136,6 @@ public class MyWebViewFragment extends Fragment {
 
 	}
 
-	/**
-	 * Convenience method for loading a url. Will fail if {@link View} is not
-	 * initialised (but won't throw an {@link Exception})
-	 * 
-	 * @param url
-	 */
-	public void loadUrl(String url) {
-		if (mIsWebViewAvailable) {
-
-			getWebView().loadUrl(MyWebViewActivity.SCHEDULE_LINK = url);
-		}
-	}
 
 	/**
 	 * Called when the fragment is visible to the user and actively running.
@@ -185,24 +181,24 @@ public class MyWebViewFragment extends Fragment {
 		super.onDestroy();
 	}
 
-	/**
-	 * Gets the WebView.
-	 */
-	public WebView getWebView() {
-		return mIsWebViewAvailable ? mWebView : null;
-	}
 
 	/* To ensure links open within the application */
 	private class InnerWebViewClient extends WebViewClient {
-		@Override
-		public void onPageFinished(WebView view, String url) {
-			super.onPageFinished(view, url);
-		}
+
+        //ADDED WORK AROUND FOR 3rd WEEK SCHEDULE
+        public void onPageFinished(WebView view, String address)
+        {
+            // have the page spill its guts, with a secret prefix
+            view.loadUrl("javascript:console.log('MAGIC'+document.getElementsByTagName('html')[0].innerHTML);");
+        }
+
+        //END WORK AROUND
+
 
 		@Override
 		public boolean shouldOverrideUrlLoading(WebView view, String url) {
+
 			view.loadUrl(url);
-			MyWebViewActivity.SCHEDULE_LINK = url;
 			slideIn();
 
 			return true;
