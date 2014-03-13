@@ -12,12 +12,7 @@ import android.view.MenuItem;
 
 public class MyWebViewActivity extends FragmentActivity {
 
-	public static String SCHEDULE_LINK = "https://enterpriseportal.disney.com/site/dlr/template"
-			+ ".MAXIMIZE/menuitem.427e06f258729e615927f59354276099/?javax.portlet"
-			+ ".tpst=65fa5153808737f60d9cab10b5e26099_ws_MX&javax.portlet" +
-            ".prp_65fa5153808737f60d9cab10b5e26099_viewID=maximized&javax.portlet" +
-            ".prp_65fa5153808737f60d9cab10b5e26099_dsfnavstate=%252FEHHLSMRC%252FViewCalendar.do%253Bjsessionid%253DD2AB05CE88A7E2DF075DC48F81CD37C9&beanID=1406643234&viewID=maximized&method=loadViewMySchedule&a=1";
-
+	public static String SCHEDULE_LINK = "http://www.myscheduler.org/redirect";
     public static String SCHEDULE_HTML = "";
 
 	@Override
@@ -59,6 +54,16 @@ public class MyWebViewActivity extends FragmentActivity {
 		case R.id.action_copy:
 			new GetScheduleAsyncTask(this).execute();
 			return true;
+            case R.id.action_reload:
+                SCHEDULE_LINK = "https://enterpriseportal.disney.com/site/dlr/menuitem.427e06f258729e615927f59354276099/index.jsp";
+                Fragment fragment = MyWebViewFragment.newInstance();
+
+                FragmentTransaction transaction = getSupportFragmentManager()
+                        .beginTransaction();
+                transaction.replace(R.id.webview_fragment, fragment);
+                // Commit the transaction
+                transaction.commit();
+                return true;
 		case android.R.id.home:
             finish();
             Intent intent = new Intent(this, MainScheduleActivity.class);
@@ -70,6 +75,18 @@ public class MyWebViewActivity extends FragmentActivity {
 			return super.onOptionsItemSelected(item);
 		}
 	}
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        SCHEDULE_LINK = "http://www.myscheduler.org/redirect";
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        SCHEDULE_LINK = "http://www.myscheduler.org/redirect";
+    }
 
     @Override
     public void onBackPressed() {

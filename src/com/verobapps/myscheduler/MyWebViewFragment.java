@@ -84,6 +84,7 @@ public class MyWebViewFragment extends Fragment {
             }
             // END WORK AROUND
 
+
 			public void onProgressChanged(WebView view, int progress) {
 				progressBar.setProgress(progress);
 				if (progress == 100) {
@@ -193,7 +194,6 @@ public class MyWebViewFragment extends Fragment {
         }
 
         //END WORK AROUND
-
 
 		@Override
 		public boolean shouldOverrideUrlLoading(WebView view, String url) {

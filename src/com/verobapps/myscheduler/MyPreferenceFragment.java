@@ -115,24 +115,24 @@ public class MyPreferenceFragment extends PreferenceFragment {
 			}
 		});
 
-		myPref = (Preference) findPreference("join_facebook_group");
-        myPref.setOnPreferenceClickListener(new OnPreferenceClickListener() {
-
-            @Override
-            public boolean onPreferenceClick(Preference preference) {
-                // Launch Facebook group
-                try {
-                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri
-                            .parse("fb://group/619807184732229"));
-                    startActivity(intent);
-                } catch (Exception e) {
-                    startActivity(new Intent(Intent.ACTION_VIEW, Uri
-                            .parse("http://www.facebook.com/groups/MyScheduler/")));
-                }
-
-                return false;
-            }
-        });
+//		myPref = (Preference) findPreference("join_facebook_group");
+//        myPref.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+//
+//            @Override
+//            public boolean onPreferenceClick(Preference preference) {
+//                // Launch Facebook group
+//                try {
+//                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri
+//                            .parse("fb://group/619807184732229"));
+//                    startActivity(intent);
+//                } catch (Exception e) {
+//                    startActivity(new Intent(Intent.ACTION_VIEW, Uri
+//                            .parse("http://www.facebook.com/groups/MyScheduler/")));
+//                }
+//
+//                return false;
+//            }
+//        });
 
         myPref = (Preference) findPreference("theme");
         myPref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {

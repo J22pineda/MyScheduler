@@ -65,7 +65,7 @@
             android:title="@string/join_facebook_group_title" >
             <intent
                 android:action="android.intent.action.VIEW"
-                android:data="http://www.facebook.com/groups/MyScheduler/" />
+                android:data="http://www.myscheduler.org" />
         </Preference>
         <Preference
             android:key="rate_myscheduler"

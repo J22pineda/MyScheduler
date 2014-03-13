@@ -7,12 +7,14 @@
         android:id="@+id/myList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="8dp"
+        android:padding="8dp"
         android:divider="@null"
         android:dividerHeight="8dp"
         android:drawSelectorOnTop="true"
         android:cacheColorHint="#000000"
         android:listSelector="@drawable/list_selector"
+        android:clipToPadding="false"
+        android:scrollbarStyle="outsideOverlay"
         android:longClickable="true" >
     </ListView>
 

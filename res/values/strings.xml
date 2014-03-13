@@ -39,6 +39,8 @@
     <string name="share_shifts_progress_dialog_message">Hold on a sec&#8230;</string>
     <string name="share_shifts_dialog_message">Share shifts via</string>
     <string name="shared_via_myscheduler">- via MyScheduler</string>
+
+    <string name="menu_reload_page">Reload</string>
     <!-- Preference strings -->
     <string name="hide_old_shifts_title">Hide old shifts</string>
     <string name="has_lunch_waiver_title">Lunch waiver</string>
@@ -67,7 +69,7 @@
     <string name="share_app_intent_message">Try out MyScheduler! It\'s crazy useful!\n\nhttps://play.google.com/store/apps/details?id=com.verobapps.myscheduler</string>
     <string name="feedback_email_subject">MyScheduler Feedback</string>
     <string name="feedback_email_data">mailto:j22pineda+MySchedulerFeedback@gmail.com</string>
-	<string name="join_facebook_group_title">Facebook group</string>
+	<string name="join_facebook_group_title">MyScheduler.org</string>
 	<string name="join_facebook_group_summary">Stay up to date on what\'s going on with MyScheduler.</string>
     <string name="rate_myscheduler_title">Rate MyScheduler</string>
     <string name="rate_myscheduler_summary">Enjoying MyScheduler? Please consider leaving a Play Store review.</string>
@@ -77,6 +79,6 @@
     <string name="theme_title">Themes</string>
 	
     <!-- VERSION NUMBER -->
-    <string name="version_number_summary">1.2.1.1</string>
+    <string name="version_number_summary">1.2.1.2</string>
 
 </resources>
